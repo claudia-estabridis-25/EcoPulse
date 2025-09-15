@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPulse</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+
+    <!-- Para el ícono del logo -->
+    <link rel="icon" href="/public/assets/images/ecopulse-logo.ico" type="image/x-icon">
+
+    <!-- Para la API de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+
+<body class="home">
+
+    <!-- Menú de navegación -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="../public/assets/images/ecopulse-logo.jpg" alt="EcoPulse Logo" class="logo-image">
+            <h1 class="logo-name">EcoPulse</h1>
+        </div>
+        <nav>
+            <!-- Overview, Mapa Global, Descubre Más, Tus Plantas, Contruibuir, Centro de Ayuda -->
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="full-map.html">Global Map</a></li>
+                <li><a href="#discover">Discover</a></li>
+                <li><a href="your-plants.html">Your Plants</a></li>
+                <li><a href="contribute.html">Contribute</a></li>
+                <li><a href="#help">Help Center</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark" style="background-color: #F5EFE6;">
+        <div class="container">
+            <a class="navbar-brand" href="#">EcoPulse</a>
+            <div class="collapse navbar-collapse"></div>
+        </div>
+    </nav>
+-->
+
+    <!-- Introducción -->
+    <section  id="#overview" class="welcome">
+        <div class="welcome-first">
+            <h1 class="welcome-title">Welcome to EcoPulse</h1>
+            <div class="separador"></div>
+            <p class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis odit asperiores
+                corporis
+                optio nam vitae temporibus sunt perspiciatis saepe facilis modi rerum beatae quidem quibusdam veritatis,
+                esse, possimus rem nostrum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem iste debitis
+                consequuntur saepe repudiandae aut aliquid incidunt maiores, dicta velit praesentium laborum
+                perferendis, mollitia porro sapiente molestias accusamus illum. Tenetur!</p>
+        </div>
+        <div class="welcome-image">
+            <img src="../public/assets/images/flowers1.jpg" alt="Flowers" class="flower-img">
+        </div>
+    </section>
+
+    <!-- Vista previa de Mapa Global-->
+    <section id="global-map" class="container">
+        <div class="info-map">
+            <h2>Global Flowering Events</h2>
+            <p>Get to know the magic of blooming events around the world. Here you have a preview of
+                an interactive map that shows you some blooming events, but if you want to know more click at any point
+                of the map to open the full view and see indispensable information.</p>
+        </div>
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Mi archivo JS -->
+    <script src="/public/js/map.js"></script>
+
+</body>
+
+</html>

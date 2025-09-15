@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;    
+    background-color: #D9C4B0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+    padding: 0px 30px;
+    height: 70px;
+    transition: box-shadow 0.2s;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 0;
+    margin-right: 235px;
+}
+
+.logo-container img{
+    height: 40px;
+    width: 50px;
+    border-radius: 9%;
+    margin-right: 10px; /* para separar el logo del nombre EcoPulse*/
+}
+
+.logo-container h1{
+    background: transparent;
+    color: #000000b9;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-size: 1.4em;
+}
+
+nav ul{
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin-left: 110px;
+}
+
+nav ul li a{
+    color: #000000b9;
+    text-decoration: none;
+    font-size: 1.6em;
+    padding: 10px 19px;
+}
+
+.navbar ul li a:hover {
+    background: rgba(0,0,0,0.15);
+}
+
+body{
+    background-color: #F5EFE6;
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    height: 500px;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+}
+
+.welcome-first{
+    position: absolute;
+    top: 11%;
+    width: 45%;
+    left: 3%;
+}
+
+.welcome-title{
+    color: rgba(0, 0, 0, 0.788);
+    font-size: 3.2em;
+    font-weight: 700;
+}
+
+.separador{
+    height: 33px;
+}
+
+.welcome-text{
+    color: rgba(0, 0, 0, 0.86);
+    font-size: 1.5em;
+    text-align: justify;
+    /*position: absolute;*/
+    width: 100%;
+}
+
+.welcome-image{
+    position: relative;
+    top: 12%;
+    left: 43%;
+}
+
+.flower-img{
+    width: 50%;
+    /*padding-top: 6%;
+    padding-left: 800px;
+    height: auto;
+    width: 40%;*/
+    /*height: 370px;*/
+    /*width: 550px;*/
+    border-radius: 3.4%;
+}
+
+#global-map{
+    margin: 60px 43px;
+    /*padding: 30px;*/
+    /*text-align: center;*/
+    max-width: 1350px;
+    width: 100%;
+}
+
+#global-map h2 {
+  color: rgba(0, 0, 0, 0.788);
+  margin-bottom: 25px;
+  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+  font-size: 2.5rem;
+}
+
+#global-map p{
+    color: rgba(0, 0, 0, 0.86);
+    margin-bottom: 25px;
+    font-size: 25px;  
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    width: 100%;
+    max-width: 1350px; /* ancho máximo del mapa*/
+    margin: 0 auto; /* para centrar el contenedor*/
+}
+
+#map{
+    height: 600px;
+    width: 100%; /* el mapa llena todo el contenedor, pero no la pantalla*/
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
